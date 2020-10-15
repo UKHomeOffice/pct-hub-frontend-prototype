@@ -32,6 +32,15 @@ What things you need to install the software and how to install them
 Give examples
 ```
 
+For this build I have installed the GOV.UK Design System snippets. This can be installed for either Atom or Visual Studio Code (which is what I use) - tjhe links to them are:
+
+*Atom - https://atom.io/packages/govuk-design-system-snippets
+*VSCode - https://marketplace.visualstudio.com/items?itemName=simonwhatley.govuk-design-system-snippets
+
+Installed Nunjucks (https://www.npmjs.com/package/nunjucks)
+
+For accessibility moniroting I installed Wave (https://wave.webaim.org/)
+
 ### Installing
 ##### Example
 
