@@ -3601,3 +3601,67 @@ html.has-search-results-open {
   @media print{.consultation .consultation-date{font-size:14pt;line-height:1.15}}.consultation .original-consultation{border-top:1px solid #b1b4b6}@media (min-width: 40.0625em){.consultation .original-consultation{padding-top:30px}}.speech .sidebar-with-body{position:relative;margin-bottom:50px}.direction-rtl .speech{direction:rtl;text-align:start}.world-location-news-article .sidebar-with-body{position:relative;margin-bottom:50px}.direction-rtl .world-location-news-article{direction:rtl;text-align:start}.news-article .sidebar-with-body{position:relative;margin-bottom:50px}.direction-rtl .news-article{direction:rtl;text-align:start}.corporate-information-page .sidebar-with-body{position:relative;margin-bottom:50px}.corporate-information-page .attorney-generals-office-brand-colour a{color:#a03a88}.corporate-information-page .attorney-generals-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .cabinet-office-brand-colour a{color:#347da4}.corporate-information-page .cabinet-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .civil-service-brand-colour a{color:#af292e}.corporate-information-page .civil-service-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-business-innovation-skills-brand-colour a{color:#347da4}.corporate-information-page .department-for-business-innovation-skills-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-communities-and-local-government-brand-colour a{color:#37836e}.corporate-information-page .department-for-communities-and-local-government-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-culture-media-sport-brand-colour a{color:#a03155}.corporate-information-page .department-for-culture-media-sport-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-education-brand-colour a{color:#347ca9}.corporate-information-page .department-for-education-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-environment-food-rural-affairs-brand-colour a{color:#008938}.corporate-information-page .department-for-environment-food-rural-affairs-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-international-development-brand-colour a{color:#405e9a}.corporate-information-page .department-for-international-development-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-international-trade-brand-colour a{color:#005ea5}.corporate-information-page .department-for-international-trade-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-transport-brand-colour a{color:#398373}.corporate-information-page .department-for-transport-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-for-work-pensions-brand-colour a{color:#37807b}.corporate-information-page .department-for-work-pensions-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-of-energy-climate-change-brand-colour a{color:#2b7cac}.corporate-information-page .department-of-energy-climate-change-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .department-of-health-brand-colour a{color:#39836e}.corporate-information-page .department-of-health-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .foreign-commonwealth-office-brand-colour a{color:#406e97}.corporate-information-page .foreign-commonwealth-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .government-equalities-office-brand-colour a{color:#9325b2}.corporate-information-page .government-equalities-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .hm-government-brand-colour a{color:#347da4}.corporate-information-page .hm-government-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .hm-revenue-customs-brand-colour a{color:#008670}.corporate-information-page .hm-revenue-customs-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .hm-treasury-brand-colour a{color:#832322}.corporate-information-page .hm-treasury-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .home-office-brand-colour a{color:#9440b2}.corporate-information-page .home-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .ministry-of-defence-brand-colour a{color:#5a5c92}.corporate-information-page .ministry-of-defence-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .ministry-of-justice-brand-colour a{color:#5a5c92}.corporate-information-page .ministry-of-justice-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .northern-ireland-office-brand-colour a{color:#3e598c}.corporate-information-page .northern-ireland-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .office-of-the-advocate-general-for-scotland-brand-colour a{color:#005ea5}.corporate-information-page .office-of-the-advocate-general-for-scotland-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .office-of-the-leader-of-the-house-of-commons-brand-colour a{color:#005f8f}.corporate-information-page .office-of-the-leader-of-the-house-of-commons-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .office-of-the-leader-of-the-house-of-lords-brand-colour a{color:#c2395d}.corporate-information-page .office-of-the-leader-of-the-house-of-lords-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .scotland-office-brand-colour a{color:#405c8a}.corporate-information-page .scotland-office-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .uk-export-finance-brand-colour a{color:#005ea5}.corporate-information-page .uk-export-finance-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .uk-trade-investment-brand-colour a{color:#005ea5}.corporate-information-page .uk-trade-investment-brand-colour a:focus{color:#0b0c0c}.corporate-information-page .wales-office-brand-colour a{color:#7a242a}.corporate-information-page .wales-office-brand-colour a:focus{color:#0b0c0c}.direction-rtl .corporate-information-page{direction:rtl;text-align:start}.travel-advice .part-navigation-container{margin-top:30px;margin-bottom:30px;padding-bottom:15px;border-bottom:1px solid #b1b4b6}
   @media (min-width: 40.0625em){.travel-advice .part-navigation-container{margin-top:0;margin-bottom:0;padding-bottom:15px}}.travel-advice .part-navigation{margin-bottom:0;font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-size:16px;line-height:1.25}@media print{.travel-advice .part-navigation{font-family:sans-serif}}@media (min-width: 40.0625em){.travel-advice .part-navigation{font-size:19px;line-height:1.3157894737}}@media print{.travel-advice .part-navigation{font-size:14pt;line-height:1.15}}@media (min-width: 40.0625em){.travel-advice .part-navigation{font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-size:14px;line-height:1.1428571429}}@media print and (min-width: 40.0625em){.travel-advice .part-navigation{font-family:sans-serif}}@media (min-width: 40.0625em) and (min-width: 40.0625em){.travel-advice .part-navigation{font-size:16px;line-height:1.25}}@media print and (min-width: 40.0625em){.travel-advice .part-navigation{font-size:14pt;line-height:1.2}}.travel-advice .part-navigation li{list-style:none;margin-bottom:0.75em}.travel-advice .part-title{font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:700;font-size:18px;line-height:1.1111111111;margin-bottom:15px;margin-top:15px}@media print{.travel-advice .part-title{font-family:sans-serif}}@media (min-width: 40.0625em){.travel-advice .part-title{font-size:27px;line-height:1.1111111111}}@media print{.travel-advice .part-title{font-size:18pt;line-height:1.15}}@media (min-width: 40.0625em){.travel-advice .part-title{margin-bottom:20px;margin-top:20px}}.travel-advice .add-title-margin{margin-top:15px}@media (min-width: 40.0625em){.travel-advice .add-title-margin{margin-top:50px}}.travel-advice .part-navigation{margin-bottom:50px}.travel-advice .map{margin-bottom:15px;margin-top:30px}@media (min-width: 40.0625em){.travel-advice .map{margin-bottom:50px}}.travel-advice .map .map-image{max-width:100%}.contact .add-title-margin{margin-top:15px}@media (min-width: 40.0625em){.contact .add-title-margin{margin-top:50px}}.contact .govuk-govspeak .normal-weight{font-weight:normal}.specialist-document .sidebar-with-body{position:relative;margin-bottom:50px}.answer .add-title-margin{margin-top:15px}@media (min-width: 40.0625em){.answer .add-title-margin{margin-top:50px}}.answer .last-updated{padding-bottom:15px}.help-page .add-title-margin{margin-top:15px}@media (min-width: 40.0625em){.help-page .add-title-margin{margin-top:50px}}.help-page .last-updated{padding-bottom:15px}.guide .part-navigation-container{margin-top:30px;margin-bottom:30px;padding-bottom:15px;border-bottom:1px solid #b1b4b6}
   @media (min-width: 40.0625em){.guide .part-navigation-container{margin-top:0;margin-bottom:0;padding-bottom:15px}}.guide .part-navigation{margin-bottom:0;font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-size:16px;line-height:1.25}@media print{.guide .part-navigation{font-family:sans-serif}}@media (min-width: 40.0625em){.guide .part-navigation{font-size:19px;line-height:1.3157894737}}@media print{.guide .part-navigation{font-size:14pt;line-height:1.15}}@media (min-width: 40.0625em){.guide .part-navigation{font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-size:14px;line-height:1.1428571429}}@media print and (min-width: 40.0625em){.guide .part-navigation{font-family:sans-serif}}@media (min-width: 40.0625em) and (min-width: 40.0625em){.guide .part-navigation{font-size:16px;line-height:1.25}}@media print and (min-width: 40.0625em){.guide .part-navigation{font-size:14pt;line-height:1.2}}.guide .part-navigation li{list-style:none;margin-bottom:0.75em}.guide .part-title{font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:700;font-size:18px;line-height:1.1111111111;margin-bottom:15px;margin-top:15px}@media print{.guide .part-title{font-family:sans-serif}}@media (min-width: 40.0625em){.guide .part-title{font-size:27px;line-height:1.1111111111}}@media print{.guide .part-title{font-size:18pt;line-height:1.15}}@media (min-width: 40.0625em){.guide .part-title{margin-bottom:20px;margin-top:20px}}.guide .add-title-margin{margin-top:15px}@media (min-width: 40.0625em){.guide .add-title-margin{margin-top:50px}}.guide .part-navigation li{list-style:decimal;margin-left:1.5em;padding-left:0.3em}.guide .govuk-govspeak h2{font-family:"nta", Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:700;font-size:18px;line-height:1.1111111111}@media print{.guide .govuk-govspeak h2{font-family:sans-serif}}@media (min-width: 40.0625em){.guide .govuk-govspeak h2{font-size:24px;line-height:1.25}}@media print{.guide .govuk-govspeak h2{font-size:18pt;line-height:1.15}}.travel-advice-notice{background-color:#f3f2f1;border:1px solid #b1b4b6;margin-bottom:40px;position:relative}.travel-advice-notice__header{padding:20px 20px 0 15px}.travel-advice-notice__content{margin-top:-15px;padding:0 20px 0 60px}.travel-advice-notice__icon{margin-left:15px}
+
+/* ul.tab__nav {
+  @include govuk-font(19);
+  margin-top: 0;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0;
+    list-style: none;
+  }
+  li a {
+    padding: 10px 5px 15px;
+    text-decoration: none;
+    display: block;
+
+    &.active, &:hover.active {
+      @include govuk-font(19, $weight: bold);
+      color: #0B0C0C;
+    }
+  }
+
+  a:visited {
+    color: #005EA5;
+  }
+
+  .active:hover {
+    background: #FFF;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: #005EA5;
+    text-decoration: underline;
+    background: #DEE0E2;
+
+    &.locked {
+      color: #4E5455;
+      background-color: transparent;
+      cursor: default;
+    }
+  }
+  li a:focus {
+    color: #0B0C0C;
+  }
+  .locked {
+    color: #4E5455;
+    padding: 10px 5px 15px;
+  }
+  hr {
+    height: 1px;
+    background-color: #BFC1C3;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 640px ) {
+    margin-bottom: 15px;
+  }
+
+}
+
+.tab__content {
+  float: left;
+  width: 100%;
+} */

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" class="govuk-template no-js">
   <head>
@@ -5,23 +6,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Home Office - Cloud Centre of Excellence</title>
+    <title>How to store source code - The GDS Way</title>
 
-    <link href="stylesheets/styles.css" rel="stylesheet" />
+    <link href="/stylesheets/styles2.css" rel="stylesheet" />
 
-    <!-- <link rel="canonical" href="https://gds-way.cloudapps.digital/">
+    <!-- <link rel="canonical" href="https://gds-way.cloudapps.digital/standards/source-code.html">
 
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:domain" content="gds-way.cloudapps.digital" />
+      <meta name="twitter:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
+      <meta name="twitter:title" content="How to store source code - The GDS Way" />
+      <meta name="twitter:url" content="https://gds-way.cloudapps.digital/standards/source-code.html" />
 
       <meta property="og:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
       <meta property="og:site_name" content="The GDS Way" />
-      <meta property="og:title" content="The GDS Way" />
+      <meta property="og:title" content="How to store source code" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://gds-way.cloudapps.digital/" />
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:domain" content="gds-way.cloudapps.digital" />
-      <meta property="twitter:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
-      <meta property="twitter:title" content="The GDS Way" />
-      <meta property="twitter:url" content="https://gds-way.cloudapps.digital/" /> -->
+      <meta property="og:url" content="https://gds-way.cloudapps.digital/standards/source-code.html" /> -->
 
     
   </head>
@@ -33,44 +34,43 @@
       <div class="app-pane__header toc-open-disabled">
         <a href="#content" class="govuk-skip-link">Skip to main content</a>
 
-      <header class="govuk-header app-header" role="banner" data-module="govuk-header">
-        <div class="govuk-header__container govuk-header__container--full-width">
-          <div class="govuk-header__logo">
-            <a href="/" class="govuk-header__link govuk-header__link--homepage">
-              <span id="top-of-page" class="govuk-header__product-name">
-                Home Office - Cloud Centre of Excellence (HO-CCoE)
-              </span>
-            </a>
-          </div>
-          <div class="govuk-header__content">
-            <button type="button" role="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-            <nav>
-              <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
-                  <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                    <a class="govuk-header__link" href="#">Documentation</a>
-                  </li>
-                  <li class="govuk-header__navigation-item">
-                    <a class="govuk-header__link" href="#">GitHub</a>
-                  </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-
-<!-- Start of phase banner -->
-      <div class="govuk-phase-banner">
-        <p class="govuk-phase-banner__content">
-          <strong class="govuk-tag govuk-phase-banner__content__tag">
-            prototype
-          </strong>
-          <span class="govuk-phase-banner__text">
-            This is NOT a live service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-          </span>
-        </p>
-      </div>
+        <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-header__container--full-width">
+    <div class="govuk-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__product-name">
+          Home Office Cloud Centre of Excellence (HO-CCoE)
+        </span>
+      </a>
     </div>
-<!-- End of phase banner -->
+    <div class="govuk-header__content">
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <nav>
+        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/">Documentation</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="https://github.com/UKHomeOffice/pct-hub-frontend-prototype">GitHub</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <!-- Start of phase banner -->
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          prototype
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is NOT a live service – your <a class="govuk-link" href="#"><strong>feedback</strong></a> is not yet required.
+        </span>
+      </p>
+    </div>
+    <!-- End of phase banner -->
+  </header>
+</div>
 
         <div id="toc-heading" class="toc-show fixedsticky">
           <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
@@ -78,73 +78,72 @@
           </a>
         </div>
 
-      <div class="app-pane__body">
+      <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
             <div class="toc" data-module="table-of-contents">
-
               <div class="search" data-module="search">
-                  <form action="https://www.google.co.uk/search" method="get" role="search">
-                    <input type="hidden" name="as_sitesearch" value="https://gds-way.cloudapps.digital"/>
-                    <label class="govuk-label search__label" for="search">
-                      Search (via Google)
-                    </label>
-                    <input class="govuk-input govuk-!-margin-bottom-4" id="search" name="q" type="text" aria-controls="search-results" placeholder="Search">
-                  </form>
-                <div id="search-results" class="search-results" aria-hidden="true" role="dialog" aria-labelledby="search-results-title">
-              <div class="search-results__inner">
-            <button class="search-results__close">Close<span class="search-results__close-label"> search results</span></button>
-            <h2 id="search-results-title" class="search-results__title" aria-live="polite">Results</h2>
-            <div class="search-results__content"></div>
-          </div>
-        </div>
-      </div>
+  <form action="https://www.google.co.uk/search" method="get" role="search">
+    <input type="hidden" name="as_sitesearch" value="https://gds-way.cloudapps.digital"/>
+    <label class="govuk-label search__label" for="search">
+      Search (via Google)
+    </label>
+    <input class="govuk-input govuk-!-margin-bottom-4" id="search" name="q" type="text" aria-controls="search-results" placeholder="Search">
+  </form>
+  <div id="search-results" class="search-results" aria-hidden="true" role="dialog" aria-labelledby="search-results-title">
+    <div class="search-results__inner">
+      <button class="search-results__close">Close<span class="search-results__close-label"> search results</span></button>
+      <h2 id="search-results-title" class="search-results__title" aria-live="polite">Results</h2>
+      <div class="search-results__content"></div>
+    </div>
+  </div>
+</div>
 
-<!-- Start of navigaton tree -->
+<!-- Start of navigation tree -->
 <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
 <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
   <ul>
     <li><a id="nav_tree" href='#ho-ccoe'><span>HO-CCoE</span></a>
       <ul>
+        <li><a href='#pct-vision'><span>Summary</a></li>
         <li><a href='#pct-vision'><span>PCT Vision</a></li>
-        <li><a href='#roadmap'>Roadmap</a></li>
-        <li><a href='#contact-pct'>Contact PCT</a></li>
+        <li><a href='#contact-pct'><span>Contact PCT</span></a></li>
       </ul>
     </li>
-    <li><a href="#getting-started">Getting started on the cloud</a>
+    <li><a href="#getting-started"><span>Getting started on the cloud</span></a>
         <ul>
-          <li><a href="#how-to-onboard">How to onboard to the cloud</a></li>
+          <li><a href="#how-to-onboard"><span>How to onboard to the cloud</span></a></li>
         </ul>
     </li>
-    <li><a href="#training">Training Pages</a>
+    <li><a href="#training"><span>Training Pages</span></a>
       <ul>
-        <li><a href="#cloud-training">Cloud Training</a></li>
-        <li><a href="#aws-certification">AWS Certification Overview</a></li>
-        <li><a href="#azure-training">Azure Training Overview</a></li>
+        <li><a href="#cloud-training"><span>Cloud Training</span></a></li>
+        <li><a href="#aws-certification"><span>AWS Certification Overview</span></a></li>
+        <li><a href="#azure-training"><span>Azure Training Overview</span></a></li>
       </ul>
     </li>
-    <li><a href="#cloud-guidance">Cloud guidance</a>
+    <li><a href="#cloud-guidance"><span>Cloud guidance</span></a>
       <ul>
-        <li><a href="#cloud-engineering">Cloud engineering</a></li>
-        <li><a href="#cloud-standards">Cloud Standards</a></li>
-        <li><a href="#cloud-reponsability">Cloud responsibility model</a></li>
-        <li><a href="#cloud-accounts">Cloud Accounts</a></li>
+        <li><a href="#cloud-engineering"><span>Cloud engineering</span></a></li>
+        <li><a href="#cloud-standards"><span>Cloud Standards</span></a></li>
+        <li><a href="#cloud-reponsability"><span>Cloud responsibility model</span></a></li>
+        <li><a href="#cloud-accounts"><span>Cloud Accounts</span></a></li>
       </ul>
     </li>
-    <li><a href="#services-we-offer">Services we offer</a>
+    <li><a href="#services-we-offer"><span>Services we offer</span></a>
       <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#cloud-sandbox">Public Cloud Sandbox</a></li>
+        <li><a href="#services"><span>Services</span></a></li>
+        <li><a href="#cloud-sandbox"><span>Public Cloud Sandbox</span></a></li>
       </ul>
     </li>
-    <li><a href="#affiliations">Affiliations</a>
+    <li><a href="#affiliations"><span>Affiliations</span></a>
       <ul>
-        <li><a href="https://www.youtube.com/GovDigitalService">Government Digital Service (GDS) - YouTube Channel</a></li>
-        <li><a href="http://www.youtube.com/ukhomeoffice">Home Office (HO) - YouTube Channel</a></li>
+        <li><a href="https://www.youtube.com/GovDigitalService"><span>Government Digital Service (GDS) - YouTube Channel</span></a></li>
+        <li><a href="http://www.youtube.com/ukhomeoffice"><span>Home Office (HO) - YouTube Channel</span></a></li>
       </ul>
     </li>
   </ul>
-</nav>
-</div>
+    </nav>
+  </div>
 </div>
 <!-- End of navigation tree -->
 
@@ -239,6 +238,8 @@
 </ul>
 
 <p>Back to start of <a href="#nav_tree">navigation tree</a></p>
+<!-- <a href="#nav_tree" class="govuk-skip-link">Back to start of navigation tree</a> -->
+
 
 <h2 id="product-pages">Product Pages</h2>
 <ul>
@@ -250,8 +251,6 @@
 </ul>
 
 <p>Back to start of <a href="#nav_tree">navigation tree</a></p>
-<!-- <a href="#nav_tree" class="govuk-skip-link">Back to start of navigation tree</a> -->
-
 
 <h2 id="tools">Tools</h2>
 <ul>
@@ -294,13 +293,18 @@
     </aside>
 <!-- End of main body -->
 
-  <footer class="govuk-footer app-footer" role="contentinfo">
+          <footer class="govuk-footer app-footer" role="contentinfo">
   <div class="govuk-footer__meta">
     <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
+        <ul class="govuk-footer__inline-list">
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/accessibility.html">Accessibility</a>
+            </li>
+        </ul>
 
       <svg
-        role="presentation"
+        aria-hidden="true"
         focusable="false"
         class="govuk-footer__licence-logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -321,12 +325,12 @@
           rel="license"
         >Open Government Licence v3.0</a>, except where otherwise stated
       </span>
-      <p><a href="/accessibility.html">Accessibility Statement</a></p>
-      <p><a href="/index2.html">Index 2</a></p>
-      <p><a href="/there_was_a_problem.html">There was a problem</a></p>
     </div>
     <div class="govuk-footer__meta-item">
-      <img class="ho-logo" src="images/ho_logo.png" alt="Home Office Logo"><br>Property of the Home Office</img>
+      <a
+        class="govuk-footer__link govuk-footer__copyright-logo"
+        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      >© Crown copyright</a>
     </div>
   </div>
 </footer>
@@ -336,6 +340,6 @@
     </div>
 
     
-    <script src="javascripts/script.js"></script>
+    <script src="/javascripts/script2.js"></script>
   </body>
 </html>
