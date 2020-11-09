@@ -40,38 +40,34 @@
     <div class="govuk-header__logo">
       <a href="/" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__product-name">
-          PCT Hub
+          Home Office - Cloud Centre of Excellence (HO-CCoE)
         </span>
       </a>
     </div>
     <div class="govuk-header__content">
-      <button type="button" role="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
       <nav>
         <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
-            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-              <a class="govuk-header__link" href="/">Documentation</a>
-            </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">GitHub</a>
+              <a class="govuk-header__link" href="https://github.com/UKHomeOffice/pct-hub-frontend-prototype">GitHub</a>
             </li>
         </ul>
       </nav>
     </div>
   </div>
-</header>
-
-<!-- Start of phase banner -->
-<div class="govuk-phase-banner">
-  <p class="govuk-phase-banner__content">
-    <strong class="govuk-tag govuk-phase-banner__content__tag">
-      prototype
-    </strong>
-    <span class="govuk-phase-banner__text">
-      This is NOT a live service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-    </span>
-  </p>
-</div>
-<!-- End of phase banner -->
+    <!-- Start of phase banner -->
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          prototype
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is NOT a live service – your <a class="govuk-link" href="#"><strong>feedback</strong></a> is not yet required.
+        </span>
+      </p>
+    </div>
+    <!-- End of phase banner -->
+  </header>
 
       </div>
 
@@ -104,50 +100,28 @@
 <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
 <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
   <ul>
-    <li><a href='/index.html'>PCT Hub</a>
-      <ul>
-        <li><a href='/index/#pct-vision'>PCT Vision</a></li>
-        <li><a href='#account-creation-and-iam-management'>Account Creation & IAM Management</a></li>
-        <li><a href='#whats-new'>What's new?</a></li>
-      </ul>
-    </li>
-    <li><a href="#guides-and-information">Guides & Information</a>
+    <li><a id="nav_tree" href='#ho-ccoe'><span>HO - CCoE</span></a>
+      <li><a href="cloud_training.html"><span>Cloud Training</span></a>
         <ul>
-          <li><a href="/#">Recharging & Finance Guide</a></li>
-          <li><a href="/#">Cost Optimisation</a></li>
-          <li><a href="/#">A link</a></li>
-          <li><a href="/#">Another link</a></li>
-          <li><a href="/#">This link with a longer name</a></li>
-          <li><a href="/#">Hwo about this link</a></li>
-          <li><a href="/#">The last link in this list</a></li>
+          <li><a href="#aws-training"><span>AWS Training</span></a></li>
+          <li><a href="#azure-training"><span>Azure Training</span></a></li>
         </ul>
-    </li>
-    <li><a href="#product-pages">Product Pages</a>
-      <ul>
-        <li><a href="/#">Goals</a></li>
-        <li><a href="/#">Roadmap & Product Vision</a></li>
-        <li><a href="/#">A link</a></li>
-        <li><a href="/#">Another link</a></li>
-        <li><a href="/#">This link with a longer name</a></li>
-        <li><a href="/#">The last link in this list</a></li>
-      </ul>
-    </li>
-    <li><a href="#tools">Tools</a>
-      <ul>
-        <li><a href="/#">AWS Cost Calculator (external site)</a></li>
-        <li><a href="/#">Azure Cost Calculator (external site)</a></li>
-        <li><a href="/#">A link</a></li>
-        <li><a href="/#">Another link</a></li>
-        <li><a href="/#">This link with a longer name</a></li>
-        <li><a href="/#">The last link in this list</a></li>
-      </ul>
-    </li>
-    <li><a href="#training-pages">Training Pages</a>
-      <ul>
-        <li><a href="/#">AWS Training</a></li>
-        <li><a href="/#">Azure Training</a></li>
-      </ul>
-    </li>
+      </li>
+      <li><a href="#cloud-guidance"><span>Cloud Guidance</span></a>
+        <ul>
+          <li><a href="#operational-excellence"><span>Operational Excellence</span></a></li>
+          <li><a href="#security-and-access"><span>Security and Access</span></a></li>
+          <li><a href="#reliability"><span>Reliability</span></a></li>
+          <li><a href="#cloud-performance-efficiency"><span>Cloud Performance Efficiency</span></a></li>
+          <li><a href="#cost-optimisation"><span>Cost Optimisation</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#public-cloud-services"><span>Public Cloud Services</span></a>
+        <ul>
+          <li><a href="#iam"><span>IAM</span></a></li>
+          <li><a href="#public-cloud-sandbox"><span>Public Cloud Sandbox</span></a></li>
+        </ul>
+      </li>    
     <li><a href="#affiliations">Affiliations</a>
       <ul>
         <li><a href="https://www.youtube.com/GovDigitalService">Government Digital Service (GDS) - YouTube Channel</a></li>
@@ -167,16 +141,33 @@
 
     <a href="/" class="govuk-back-link">Back to previous page</a>
 
+    <div>
 
-<h1 id="pct-hub">Public Cloud Team (PCT) Hub</h1>
+<h1 id="pct-hub">Cloud Training</h1>
 
-<h2 id="pct-vision">Training Pages</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem distinctio earum pariatur totam qui quos voluptatum excepturi ipsam ad sunt odit, dolor a culpa dolore ut laborum, maiores optio sit:</p>
+<h2 id="pct-vision">How does cloud training work in the Home Office?</h2>
+<p>The Public Cloud Team works alongside the Chief Technology Officer's (CTO) office to organise cloud training for staff. The Home Office does not provide cloud training directly. Instead, we have training offered by our cloud providers such as Amazon Web Services and Microsoft Azure and cloud training websites such as Cloudacademy.</p>
+ 
+<h2>Types of Training offered:</h2>
+<h3>Virtual Classroom Training from AWS and Microsoft Azure</h3>
+<p>For live virtual training we have events provided by AWS and Microsoft Azure. The Public Cloud Team can coordinate ad hoc training days taught by cloud professionals. See our ‘upcoming training section’ for future training days. We can also organise 'cloud game days' as and when required, so please contact us if this is something you are interested in. Email: Public.Cloud@homeoffice.gov.uk</p>
+
+<ul>
+  <li><a href="/aws_training.html">How to book AWS Training</a></li>
+  <li><a href="/azure_training.html">How to book Azure Training</a></li>
+</ul>
+
+<h3>Online learning with CloudAcademy</h3>
+<p> CloudAcademy is an online resource that can provide a learning path for AWS, Azure and Google Cloud, and we can arrange for you to view the full list of courses to help assess whether it would be suitable for you and/or your team. To arrange access to Cloud Academy, please contact us through email: Public.Cloud@homeoffice.gov.uk</p>
+
+<h3>Online Learning with AWS and Microsoft Azure</h3>
+<p>AWS and Microsoft also have their own learning pathways that are free. This training is a similar style to CloudAcademy training where you can watch videos and carry out practical training/labs at your own pace.</p>
+
+</div>
   <ul>
-    <li><a href="/aws_training.html">AWS Training</a></li>
+<li><a href="/aws_training.html">AWS Training</a></li>
     <li><a href="/azure_training.html">Azure Training</a></li>
   </ul>
-
             
   </main>
 
