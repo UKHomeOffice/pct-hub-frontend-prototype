@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" class="govuk-template no-js">
   <head>
@@ -5,25 +6,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Cloud Training</title>
+    <title>IAM Account requests</title>
 
-    
-    <link href="stylesheets/styles.css" rel="stylesheet" />
-    <!-- <link href="stylesheets/styles.css" rel="stylesheet" /> -->
+    <link href="/stylesheets/styles.css" rel="stylesheet" />
 
-    <link rel="canonical" href="https://gds-way.cloudapps.digital/">
+    <!-- <link rel="canonical" href="https://gds-way.cloudapps.digital/standards/source-code.html">
 
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:domain" content="gds-way.cloudapps.digital" />
+      <meta name="twitter:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
+      <meta name="twitter:title" content="How to store source code - The GDS Way" />
+      <meta name="twitter:url" content="https://gds-way.cloudapps.digital/standards/source-code.html" />
 
       <meta property="og:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
       <meta property="og:site_name" content="The GDS Way" />
-      <meta property="og:title" content="The GDS Way" />
+      <meta property="og:title" content="How to store source code" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://gds-way.cloudapps.digital/" />
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:domain" content="gds-way.cloudapps.digital" />
-      <meta property="twitter:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
-      <meta property="twitter:title" content="The GDS Way" />
-      <meta property="twitter:url" content="https://gds-way.cloudapps.digital/" />
+      <meta property="og:url" content="https://gds-way.cloudapps.digital/standards/source-code.html" /> -->
 
     
   </head>
@@ -68,8 +67,7 @@
     </div>
     <!-- End of phase banner -->
   </header>
-
-      </div>
+</div>
 
         <div id="toc-heading" class="toc-show fixedsticky">
           <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
@@ -77,7 +75,7 @@
           </a>
         </div>
 
-      <div class="app-pane__body">
+      <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
             <div class="toc" data-module="table-of-contents">
               <div class="search" data-module="search">
@@ -97,78 +95,78 @@
   </div>
 </div>
 
+<!-- Start of navigation tree -->
 <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
 <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
   <ul>
     <li><a id="nav_tree" href='index.html'><span>HO - CCoE</span></a>
-      <li><a href="cloud_training.html"><span>Cloud Training</span></a>
-        <ul>
-          <li><a href="AWS_Training_section.html"><span>AWS Training</span></a></li>
-          <li><a href="#azure-training"><span>Azure Training</span></a></li>
-        </ul>
-      </li>
-      <li><a href="cloud_guidance.html"><span>Cloud Guidance</span></a>
-        <ul>
-          <li><a href="#operational-excellence"><span>Operational Excellence</span></a></li>
-          <li><a href="#security-and-access"><span>Security and Access</span></a></li>
-          <li><a href="#reliability"><span>Reliability</span></a></li>
-          <li><a href="#cloud-performance-efficiency"><span>Cloud Performance Efficiency</span></a></li>
-          <li><a href="#cost-optimisation"><span>Cost Optimisation</span></a></li>
-        </ul>
-      </li>
-      <li><a href="public_cloud_services.html"><span>Public Cloud Services</span></a>
-        <ul>
-          <li><a href="#iam"><span>IAM</span></a></li>
-          <li><a href="#public-cloud-sandbox"><span>Public Cloud Sandbox</span></a></li>
-        </ul>
-      </li>    
-    <li><a href="#affiliations">Affiliations</a>
+    </li>
+    <li><a href="cloud_training.html"><span>Cloud Training</span></a>
+    </li>
+    <li><a href="cloud_guidance.html"><span>Cloud Guidance</span></a>
+    </li>
+    <li><a href="public_cloud_services.html"><span>Public Cloud Services</span></a>
       <ul>
-        <li><a href="https://www.youtube.com/GovDigitalService">Government Digital Service (GDS) - YouTube Channel</a></li>
-        <li><a href="http://www.youtube.com/ukhomeoffice">Home Office (HO) - YouTube Channel</a></li>
+        <li><a href="V2AWS_account_requests.html"><span>IAM</span></a></li>
+        <li><a href="#public-cloud-sandbox"><span>Public Cloud Sandbox</span></a></li>
       </ul>
     </li>
   </ul>
-</nav>
+    </nav>
+  </div>
 </div>
-</div>
+<!-- End of navigation tree -->
 
+<!-- Start of main body -->
 <div class="app-pane__content toc-open-disabled">
   <main id="content" class="technical-documentation" data-module="anchored-headings">
     <div class="page-banner">
-      <p>The PCT Hub and its content is intended for internal use by the Home Office community.</p>
+      <p>The HO-CCoE and its content is intended for internal use by the Home Office community.</p>
     </div>
 
-    <a href="/" class="govuk-back-link">Back to previous page</a>
+<h1 id="ho-ccoe">AWS IAM Account Requests</h1>
 
-    <div>
-
-<h1 id="pct-hub">Cloud Training</h1>
-
-<h2 id="pct-vision">How does cloud training work in the Home Office?</h2>
-<p>The Public Cloud Team works alongside the Chief Technology Officer's (CTO) office to organise cloud training for staff. The Home Office does not provide cloud training directly. Instead, we have training offered by our cloud providers such as Amazon Web Services and Microsoft Azure and cloud training websites such as Cloudacademy.</p>
- 
-<h2>Types of Training offered:</h2>
-<h3>Virtual Classroom Training from AWS and Microsoft Azure</h3>
-<p>For live virtual training we have events provided by AWS and Microsoft Azure. The Public Cloud Team can coordinate ad hoc training days taught by cloud professionals. See our ‘upcoming training section’ for future training days. We can also organise <a href="https://aws.amazon.com/gameday/">cloud game days</a> as and when required, so please contact us if this is something you are interested in. <a href="mailto:Public.Cloud@homeoffice.gov.uk">Email: Public.Cloud@homeoffice.gov.uk</a></p>
+<div class="govuk-grid-row">
 
 
+  <div>
+    <p class="govuk-main-wrapper--auto-spacing">This page instructs Home Office staff on how to make changes to cloud accounts. The Public Cloud Team manage Identity and Access Management (IAM) in the Home Office. Any requests such as creating/deleting an account, adding new roles to your account and resetting a password need to be logged on the Jira board as explained in the how to make an IAM request step-by-step instructions below.</p>
+  </div>
+</div>
+
+<h2 id="service-overview">Who can raise tickets?</h2>
 <ul>
-  <li><a href="/aws_training.html">How to book AWS Training</a></li>
-  <li><a href="/azure_training.html">How to book Azure Training</a></li>
+  <li>Approvers can raise requests on behalf of their colleagues. An example of this would be to request for a user to be removed after they have left the Home Office.</li>
+  <li>Cloud user can raise tickets to make changes to their existing account</li>
+  <li>New users requesting a cloud account</li>
 </ul>
 
-<h3>Online learning with CloudAcademy</h3>
-<p><a href="https://cloudacademy.com">CloudAcademy</a> is an online resource that can provide a learning path for AWS, Azure and Google Cloud, and we can arrange for you to view the full list of courses to help assess whether it would be suitable for you and/or your team. To arrange access to Cloud Academy, please contact us through <a href="mailto:Public.Cloud@homeoffice.gov.uk">email: Public.Cloud@homeoffice.gov.uk</a></p>
+<h2>Useful pages</h2>
+<ul>
+  <li>Approvers list - When users that are not approvers raise a ticket, they must attach an approver to their request.</li>
+  <li>To see a full list of roles available for each AWS account then visit our Cloud Account or IAM User Changes & Requests & Approvers page to find your account details (This list is updated periodically).</li>
+</ul>
+  <h2>How to make IAM requests</h2>
+  <p>Below is an example of how to make a request to create a new user in the cloud. However, the same steps can be applied to all the ticket types. </p>
 
-<h3>Online Learning with AWS and Microsoft Azure</h3>
-<p>AWS and Microsoft also have their own learning pathways that are free. This training is a similar style to CloudAcademy training where you can watch videos and carry out practical training/labs at your own pace.</p>
+<!-- <a href="#nav_tree" class="govuk-skip-link">Back to start of navigation tree</a> -->
+<ol>
+  <li>Visit the Jira board and click the ‘Create’ button in the top right corner</li>
+  <img src="images/Step1.png" alt="How to create a ticket">
+  <li>Next select the Issue Type - AWS Account Change Request</li>
+  <img src="images/Issuetype.png" alt="Select issue type">
+  <li>Choose the appropriate ticket type depending on your request e.g. New User, Reset Password, Delete User etc.</li>
+  <img src="images/Request type.png" alt="Request type">
+  <li>Please fill in as much useful details as possible as this will help us complete the ticket as quick as we can. See the example below for a new user request.</li>
+  <img src="images/example request.png" alt="Example IAM request">
+  <li>If you have access to the repo you could include these details into the ticket.</li>
+  <img src="images/trustee.png" alt="Public Cloud Team Logo">
+</ol>
 
-</div>
-  <ul>
-<li><a href="/aws_training.html">AWS Training</a></li>
-    <li><a href="/azure_training.html">Azure Training</a></li>
-  </ul>
+
+<p>Back to start of <a href="#nav_tree">navigation tree</a></p>
+
+<a href="#ho-ccoe">Back to top</a>
             
   </main>
 
@@ -179,14 +177,20 @@
           <li><a href="https://github.com/alphagov/gds-way"><b>GDS</b> GitHub Repo</a></li>
         </ul>
     </aside>
+<!-- End of main body -->
 
-  <footer class="govuk-footer app-footer" role="contentinfo">
+          <footer class="govuk-footer app-footer" role="contentinfo">
   <div class="govuk-footer__meta">
     <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
+        <ul class="govuk-footer__inline-list">
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/accessibility.html">Accessibility</a>
+            </li>
+        </ul>
 
       <svg
-        role="presentation"
+        aria-hidden="true"
         focusable="false"
         class="govuk-footer__licence-logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -207,8 +211,12 @@
           rel="license"
         >Open Government Licence v3.0</a>, except where otherwise stated
       </span>
-      <p><a href="/accessibility.html">Accessibility Statement</a></p>
-      <p><a href="/there_was_a_problem.html">There was a problem</a></p>
+    </div>
+    <div class="govuk-footer__meta-item">
+      <a
+        class="govuk-footer__link govuk-footer__copyright-logo"
+        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      >© Crown copyright</a>
     </div>
   </div>
 </footer>
@@ -218,6 +226,6 @@
     </div>
 
     
-    <script src="javascripts/script.js"></script>
+    <script src="/javascripts/script.js"></script>
   </body>
 </html>
