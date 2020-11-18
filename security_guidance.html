@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Cloud Guidance</title>
+
+    
+    <link href="./stylesheets/styles.css" rel="stylesheet" />
+    <!-- <link href="stylesheets/styles.css" rel="stylesheet" /> -->
+
+    <link rel="canonical" href="https://gds-way.cloudapps.digital/">
+
+
+      <meta property="og:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
+      <meta property="og:site_name" content="The GDS Way" />
+      <meta property="og:title" content="The GDS Way" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="https://gds-way.cloudapps.digital/" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:domain" content="gds-way.cloudapps.digital" />
+      <meta property="twitter:image" content="https://gds-way.cloudapps.digital/images/govuk-large.png" />
+      <meta property="twitter:title" content="The GDS Way" />
+      <meta property="twitter:url" content="https://gds-way.cloudapps.digital/" />
+
+    
+  </head>
+
+  <body class="govuk-template__body">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+
+        <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-header__container--full-width">
+    <div class="govuk-header__logo">
+      <a href="./" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__product-name">
+          Home Office - Cloud Centre of Excellence (HO-CCoE)
+        </span>
+      </a>
+    </div>
+    <div class="govuk-header__content">
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <nav>
+        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="https://github.com/UKHomeOffice/pct-hub-frontend-prototype">GitHub</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <!-- Start of phase banner -->
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          prototype
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is NOT a live service – your <a class="govuk-link" href="#"><strong>feedback</strong></a> is not yet required.
+        </span>
+      </p>
+    </div>
+    <!-- End of phase banner -->
+  </header>
+
+      </div>
+
+        <div id="toc-heading" class="toc-show fixedsticky">
+          <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+            Table of contents <span class="toc-show__icon"></span>
+          </a>
+        </div>
+
+      <div class="app-pane__body">
+          <div class="app-pane__toc">
+            <div class="toc" data-module="table-of-contents">
+              <div class="search" data-module="search">
+  <form action="https://www.google.co.uk/search" method="get" role="search">
+    <input type="hidden" name="as_sitesearch" value="https://gds-way.cloudapps.digital"/>
+    <label class="govuk-label search__label" for="search">
+      Search (via Google)
+    </label>
+    <input class="govuk-input govuk-!-margin-bottom-4" id="search" name="q" type="text" aria-controls="search-results" placeholder="Search">
+  </form>
+  <div id="search-results" class="search-results" aria-hidden="true" role="dialog" aria-labelledby="search-results-title">
+    <div class="search-results__inner">
+      <button class="search-results__close">Close<span class="search-results__close-label"> search results</span></button>
+      <h2 id="search-results-title" class="search-results__title" aria-live="polite">Results</h2>
+      <div class="search-results__content"></div>
+    </div>
+  </div>
+</div>
+
+<a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+<nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+  <ul>
+    <li><a id="nav_tree" href='index.html'><span>HO - CCoE</span></a>
+      <li><a href="cloud_guidance.html"><span>Cloud guidance</span></a>
+      <li><a href="cloud_guidance.html"><span></span>Operational Excellence</a>
+      <li><a href="security_guidance.html"><span>Security</span></a>
+        <ul>
+          <li><a href="#cloud-responsibility-model"><span>Cloud responsibility model</span></a></li>
+          <li><a href="#access_keys"><span>Access keys</span></a></li>
+        </ul>
+      <li><a href="cloud_guidance.html"><span>Reliability</span></a>
+      <li><a href="cloud_guidance.html"><span>Performance Efficiency</span></a>
+      <li><a href="cloud_guidance.html"><span>Reliability</span></a>
+        <ul>
+    </nav>
+</div>
+</div>
+
+<div class="app-pane__content toc-open-disabled">
+  <main id="content" class="technical-documentation" data-module="anchored-headings">
+    <div class="page-banner">
+      <p>The PCT Hub and its content is intended for internal use by the Home Office community.</p>
+    </div>
+
+    <a href="/" class="govuk-back-link">Back to previous page</a>
+    <div>
+
+<h1 id="page_title">Security guidance</h1>
+
+<h2>What is the security pillar?</h2>
+<p>The security pillar describes how to take advantage of cloud technologies to protect data, systems, and assets in a way that can improve your security. 
+  To give you an oversight of the pillar, we have included the seven design principles for security in the cloud below. For more information on the Security 
+  Pillar view the further resources. </p> 
+
+<h3>Further security resources</h3>
+<ul>
+<li><a href="https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf">AWS Security Whitepapers</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/security/overview">Microsoft Azure security pillar overview</a></li>
+</ul>
+
+<h3>Design principles</h3>
+<table class="security_table">
+  <tr>
+    <th>Design Principle</th>
+    <th>Explanation</th>
+  </tr>
+  <tr>
+    <td>Implement a strong identity foundation</td>
+    <td>Identity, authentication and authorisation is highly important for access control and ensures that data remains protected.</td>
+  </tr>
+  <tr>
+    <td>Enable traceability</td>
+    <td>The ability to audit and attribute actions within the cloud ensures that service and data security can be monitored.</td>
+  </tr>
+  <tr>
+    <td>Apply security at all layers</td>
+    <td>Defence in depth approach increases difficulty of any attacks on the service.</td>
+  </tr>
+  <tr>
+    <td>Automate security best practices</td>
+    <td>Automation allows repeatability and builds confidence in deployment – assessment of security benchmarks under Governance as Code approach.</td>
+  </tr>
+  <tr>
+    <td>Protect data in transit and at rest</td>
+    <td>All data should be encrypted in transit across the cloud and all data should be encrypted at rest.</td>
+  </tr>
+  <tr>
+    <td>Keep people away from data</td>
+    <td>Data should be protected from manual use and manipulation.</td>
+  </tr>
+  <tr>
+    <td>Prepare for security events</td>
+    <td>Security breaches and incidents happen and preparation for these events can ensure that when then do occur they can be dealt with quickly and 
+      effectively and minimise any potential data loss or compromise of assets.</td>
+  </tr>
+</table>
+
+<p>Considering the guidance from the security pillar of the Well Architected Framework, we have different sections that that relate to security in the Home Office:</p>
+<ul>
+  <li>Cloud responsibility model</li>
+  <li>Long lived access keys</li>
+  <li>How IAM works in the HO</li>
+  <li>National Cyber Security Centre (NCSC) Cloud Security Principles</li>
+</ul>
+
+
+<h2 id="cloud-responsibility-model">Cloud responsibility model</h2>
+<h3>What is the cloud responsibility model?</h3>
+<p>Cloud Security is fundamentally based on what the major public cloud providers term as shared responsibility model (SRM) between customers and the cloud 
+  provider. All organisations using the cloud sign up to this model. The SRM defines who is responsible for what on the cloud. The model broadly divides 
+  responsibilities into "of" and "in". The Home Office has responsibility for the security in the cloud, this covers how we use the cloud. While the cloud 
+  provider has responsibility for the security of the cloud. The details of this model depend significantly on the type of service that you are using in 
+  the cloud, for example the Home Office has less responsibility over an Azure Function (the equivalent of AWS lambda) which is serverless compared to an 
+  AWS EC2 where everything accept the physical hardware, boot and storage is our responsibility.</p>
+
+<h3>Cloud Services</h3>
+<p>Cloud services can be generally split between Infrastructure, Platform or Software as a service.</p>
+<ul>
+  <li>Infrastructure as a Service (IaaS) are services provided within the cloud means that the Home Office operates the infrastructure but do not control 
+    the physical infrastructure.</li>
+  <li>Platform as a Service or Container Services (PaaS/CS) (Azure/AWS) are cloud provided services where the customer has fewer responsibilities to secure 
+    the service and AWS/Azure have greater responsibility for keeping services up to date. Cloud providers are responsible for the platform and application 
+    management as well as the security of the operating systems and networks (except for Firewall configuration, i.e. security groups which can be 
+    configured by the customer to lock down access to the service).</li>
+  <li>Software as a Service or Abstract Services (SaaS/AS) (Azure/AWS) are cloud provided services where the customer has the fewest responsibilities to 
+    secure the service. The cloud provider is responsible for the security of network, platform, OS and infrastructure. The Home Office are responsible for 
+    managing who has access to the data and that we are using the encryption services. These responsibilities are split over several Home Office teams.</li>
+</ul>
+
+<p>The functions within the model can be broken down to the following:</p>
+<table class="security_table">
+  <tr>
+    <th>Area of Responsibility</th>
+    <th>SaaS/AS</th>
+    <th>PaaS/CS</th>
+    <th>IaaS</th>
+    <th>Definition</th>
+  </tr>
+  <tr>
+    <td>Customer Data</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>This is any data that the Home Office stores within AWS, i.e. an Immigration application, advanced passenger information. Under the Model this 
+      always remains the responsibility of the Home Office. The security of this data in the cloud is the responsibility of the portfolio using the cloud, 
+      however, other teams such as CSOC, platforms, public cloud, networks & infrastructure can assist by supporting security controls that allow more 
+      effective discharge of these responsibilities to mitigate the risks.</td>
+  </tr>
+  <tr>
+    <td>End-points & Devices</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>These are equipment that the Home Office uses or are used by our customers to connect to Home Office services in the cloud. The security of these 
+      remain the responsibility of the Device Owner (i.e. EUC&C within DDAT ES, Supplier when using Supplier BYOCD or an individual in the case of our 
+      customers). It is the responsibility of the portfolio to ensure that their risk owners are content with any risks related to end points and devices.</td>
+  </tr>
+  <tr>
+    <td>Account Identities</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>This is the identity used by HO users to access the public cloud. This is the responsibility of the public cloud team to manage on behalf of the 
+      Home Office.</td>
+  </tr>
+  <tr>
+    <td>Access Controls</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>These include policies, roles and permissions. The HO organisational wide Access Controls are the responsibility of the public cloud team to 
+      implement, managing risk on behalf of the risk owners (and will be set with conversations with portfolios and OCISO). Portfolios (account owners) 
+      retain responsibility of access controls for any specific roles they create within their accounts.</td>
+  </tr>
+  <tr>
+    <td>Monitoring Usage and User Audit</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>This includes system and protective monitoring of what services HO uses and an audit of which users have access to services. The responsibilities 
+      here sit across portfolios, CSOC and the public cloud team who can enable policies within the organisation to make this more straightforward. The 
+      business owner within the portfolio is responsible for how services are used.</td>
+  </tr>
+  <tr>
+    <td>Web Application Security</td>
+    <td>HO/CP</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>A broad term for the security posture of any web application deployed onto the public cloud. Responsibilities for web application security lie with 
+      the Home Office, with the exception of container services.</td>
+  </tr>
+  <tr>
+    <td>Deployment</td>
+    <td>HO/CP</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>The deployment of services used by HO in the cloud is generally the responsibility of individuals platforms and portfolios as this relates to their 
+      deployment of cloud services, and there are a range of deployment methodologies and tools in place within HO. The Public Cloud Team are responsible 
+      for the deployment of new accounts and new users. The Cloud provider is responsible for the deployment of most functionality in SaaS and particularly 
+      serverless use case.</td>
+  </tr>
+  <tr>
+    <td>Operations</td>
+    <td>CP</td>
+    <td>HO</td>
+    <td>HO</td>
+    <td>The operations of services used by the Home Office in the cloud, this is generally the responsibility of the platforms that use these services.</td>
+  </tr>
+  <tr>
+    <td>Access and Authentication into the Cloud</td>
+    <td>HO/CP</td>
+    <td>HO/CP</td>
+    <td>HO/CP</td>
+    <td>The identity service provided by the Cloud Provider, which is used to gain access and authenticate into the cloud and the cloud provider retains 
+      control over this identity service. The HO is responsible for use of this, through Account Identities and Access Controls above.</td>
+  </tr>
+  <tr>
+    <td>Network Controls</td>
+    <td>CP</td>
+    <td>HO/CP</td>
+    <td>HO</td>
+    <td>Network controls such as firewalls, load balancers, DMZ, segregation securing access, monitoring etc. are the responsibility of the Home Office 
+      when running IaaS (e.g. EC2) and are the responsibility of platforms, networks & infrastructure and portfolios to undertake (the split in 
+      responsibility depends on the model within the accounts). The PCT can assist by implementing technically enforced policies and guidelines that 
+      prevent the network controls being too open, these will be defined in conversation with portfolios, OCISO and CSOC. Within the SaaS model the cloud 
+      provider retains responsibility of these controls - however, from an assurance perspective the Home Office should be appraised of what these 
+      controls are.</td>
+  </tr>
+  <tr>
+    <td>Operating System</td>
+    <td>CP</td>
+    <td>HO/CP</td>
+    <td>HO</td>
+    <td>Within SaaS tools this remains the responsibility of the cloud provider, who will patch and keep these up to date. Within most PaaS this is also 
+      true, however, within IaaS it is the responsibility of the Home Office to manage the OS and keep these up-to-date. This is the responsibility of the 
+      portfolio/platform to undertake this. On AWS this can be done using AMIs and the public cloud team can support this with technically enforced 
+      policies, monitoring and guidelines that can alert or prevent deployment of vulnerable OS.</td>
+  </tr>
+  <tr>
+    <td>Logging Provision</td>
+    <td>CP</td>
+    <td>HO/CP</td>
+    <td>HO</td>
+    <td>Cloud providers have several tools in place to assist with logging and the provision of logs for SaaS and PaaS is primarily the responsibility of 
+      the cloud provider, with the Home Office taking responsibility to ensure that these have been turned on and configured. The PCT may provide guidance 
+      and technical enforcement of logging across the estate through policies, but these will be agreed between portfolios, platforms, OCISO and CSOC. Note 
+      even in IaaS the Home Office can hook AWS logs generated on the infrastructure, i.e. VPC flow logs, API calls into CloudTrail, but other logs remain 
+      the responsibility of the portfolio or platform running the IaaS to provision and ensure these are protected.</td>
+  </tr>
+  <tr>
+    <td>Storage & Encryption</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>HO</td>
+    <td>The physical data storage always remains the responsibility of the cloud provider. The encryption and configuration of databases on top is the 
+      responsibility of the Home Office portfolios and platforms that are using the cloud services. They can specify what encryption is in place and 
+      policies around data storage. There is an exception when using a SaaS service where the cloud provider manages the encryption and configuration of 
+      database also.</td>
+  </tr>
+  <tr>
+    <td>Networking</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>The physical networking within and out of a data centre is the responsibility of the cloud provider.</td>
+  </tr>
+  <tr>
+    <td>Kernel Hardening</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>HO</td>
+    <td>Kernel hardening is a kernel configuration that mitigates any vulnerabilities or bugs within the kernel to prevent cyber security attacks. Where 
+      the Home Office deploys its own OS and devices it is the responsibility of HO to manage this and this would set with Portfolios and Platforms to do. 
+      Otherwise, this remains the responsibility of the cloud provider.</td>
+  </tr>
+  <tr>
+    <td>Boot</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>This is part of the physical infrastructure of the data centre and is always the responsibility of the cloud provider.</td>
+  </tr>
+  <tr>
+    <td>Hardware</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>CP</td>
+    <td>The physical infrastructure within the data centre is always the responsibility of the cloud provider. The Home Office must ensure in line with 
+      the SPF that they are content with the physical security of any supplier they use, which can be demonstrated through physical security reviews/audits 
+      often conducted by third party consultancies under the SOC 2 reports. The provider is also responsible for the virtualisation.</td>
+  </tr>
+</table>
+
+<h3>Cloud Providers and Home Office Responsibility Model</h3>
+<p>The responsibility model split between the Cloud Provider and the Home Office is shown in the diagram below. This has been genericised across the 
+  IaaS/PaaS/SaaS type services, where the more purple equals more responsibility that the Home Office takes over the service (i.e. for a Operations HO 
+  would have responsibilities for IaaS and PaaS components but the Cloud Provider would have the same for SaaS).</p>
+<img src="images/cloud_providers_and_home_office_responsibility_model.png" alt="Cloud Providers and Home Office Responsibility Model">
+
+<h3>What does this mean in practice to the Home Office, and where do the responsibilities sit within the Home Office organisation structure?</h3>
+<p>The answer depends on where in Digital, Data and Technology the AWS account sits. Under the model, the Home Office has adopted this aligns to the 
+  division of the Home Office AWS estate into three Organizations (BICS-EBSA, Policing and Central). Note that the Public Cloud Team will remain 
+  responsible for billing across all accounts, although we will not retain root account responsibilities for Policing. This has an impact on cyber 
+  security risk management and where controls are put in place across the organisation.</p>
+
+<h3>Home Office Responsibility Matrix</h3>
+<!-- Can we get a sorting filter? -->
+<table class="security_table">
+  <tr>
+    <th>Area of Responsibility</th>
+    <th>ACP</th>
+    <th>EBSA</th>
+    <th>Policing</th>
+    <th>HMPO</th>
+    <th>Wider HO</th>
+  </tr>
+  <tr>
+    <td>Customer Data</td>
+    <td>Portfolio</td>
+    <td>Portfolio</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Portfolio</td>
+  </tr>
+  <tr>
+    <td>Billing</td>
+    <td>PCT</td>
+    <td>PCT</td>
+    <td>Policing</td>
+    <td></td>
+    <td>PCT</td>
+  </tr>
+  <tr>
+    <td>End-points & Devices</td>
+    <td>EUC&C + Suppliers</td>
+    <td>EUC&C + Suppliers</td>
+    <td>Policing</td>
+    <td></td>
+    <td>EUC&C + Suppliers</td>
+  </tr>
+  <tr>
+    <td>Account Identities</td>
+    <td>PCT</td>
+    <td>EBSA + PCT</td>
+    <td>Policing</td>
+    <td></td>
+    <td>PCT</td>
+  </tr>
+  <tr>
+    <td>Access Controls</td>
+    <td>ACP + PCT</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Portfolio + PCT</td>
+  </tr>
+  <tr>
+    <td>Monitoring Usage and User Audit</td>
+    <td>ACP + Portfolio</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Portfolio + PCT</td>
+  </tr>
+  <tr>
+    <td>Web Application Security</td>
+    <td>ACP + Portfolio</td>
+    <td>EBSA + Portfolio</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Portfolio + Platform</td>
+  </tr>
+  <tr>
+    <td>Deployment</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Portfolio + Platform</td>
+  </tr>
+  <tr>
+    <td>Operations</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Portfolio + Platform</td>
+  </tr>
+  <tr>
+    <td>Access and Authentication into the Cloud</td>
+    <td>PCT</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>PCT</td>
+  </tr>
+  <tr>
+    <td>Network Controls</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Platform</td>
+  </tr>
+  <tr>
+    <td>Operating System</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Platform</td>
+  </tr>
+  <tr>
+    <td>Logging Provision</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Platform</td>
+  </tr>
+  <tr>
+    <td>Storage & Encryption</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Platform</td>
+  </tr>
+  <tr>
+    <td>Kernel Hardening</td>
+    <td>ACP</td>
+    <td>EBSA</td>
+    <td>Policing</td>
+    <td></td>
+    <td>Variable</td>
+  </tr>
+</table>
+
+<p>The responsibility matrix can also be expanded to other areas of processes and standards across the HO organisation and diagram below shows a generic 
+  responsibility model across Central teams (i.e. Enterprise Services teams), Platforms (i.e. EBSA, ACP, LECP), Portfolios (i.e. BICS, PPPT) and HO 
+  capabilities such as CSOC/ITOC and OCISO. It is noted that individual areas will have a slightly different split of responsibilities and this should be 
+  outlined within security and service wrappers.</p>
+<img src="images/generic_responsibility_model.png" alt="Generic responsibility model">
+
+<h3>What does the above mean for my project?</h3>
+<p>That depends on what service type you are using and where in the Home Office your project is. If you are using IaaS, i.e. you are running and managing 
+  your own EC2 instances to do something on your application, you will be responsible for significantly more security controls than if you are using a HO 
+  Platform such as EBSA or ACP. The key thing to remember is that although your project may not be directly responsible for the configuration and 
+  provision of cloud services you use from a data protection and cyber security perspective your Senior Responsible Owner will be taking risks that are 
+  mitigated by actions of other teams.</p>
+
+<p>The Public Cloud Team is available to help with any questions and queries email: <a href="mailto:publiccloud@homeoffice.gov.uk">publiccloud@homeoffice.gov.uk</a></p>
+
+<h3>Further resources</h3>
+<ul>
+  <li><a href="https://cloudacademy.com/blog/aws-shared-responsibility-model-security/">Cloud academy shared responsibility model explanation</a></li>
+</ul>
+
+<h2 id="access_keys">Access Keys</h2>
+<p>This guidance has been designed to help development and operational teams using AWS to avoid using long-lived access keys and use temporary credentials 
+  instead (via the Secure Token Service).</p>
+<p><b>Note:</b> An alternative is to ensure the long-lived access keys are rotated regularly (i.e. within 90 days of creation).</p>
+
+<h3>What is an access key?</h3>
+<p>An AWS access key are long-term credentials for an IAM user. Access keys consist of an id and secret which is similar to usernames and passwords. 
+  Access keys can be used to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK).</p>
+
+<h3>Access keys in the Home Office</h3>
+<p>The Home Office as of May 2020 has over 1400 active AWS access keys which had not been rotated within 90 days, of which over 350 (25%) have not been 
+  rotated in over two years. Static credentials pose a security and compliance risk as it means they can be used on an ongoing basis if they have been 
+  lost, stolen, cracked or published to a public repository. At present access keys are used by both users and applications / services.</p>
+
+<h3>Why is rotating access keys important?</h3>
+<p>The importance of AWS access keys and rotation of them can be seen through their inclusion in the <a href="https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/">AWS top 10 security items</a> to improve in your AWS 
+  account and <a href="https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf">CIS AWS Foundation Benchmark</a>.</p>
+<p>The Public Cloud Team encourage the use of more secure and robust access key policy for the Home Office to educate users, application and platform 
+  teams of best practice and to encourage good behaviours. In the future the PCT may if authorised by Home Office technical, data, governance and security 
+  fora enforce the use of best practice, however, the current model is <b>educate</b>, <b>detect</b>, <b>guide</b>.</p>
+
+<h3>Policy</h3>
+<p>The PCT are looking at implementing the following policy for access keys, to reduce the risks to the Home Office. We will not force business areas to 
+  comply with the policy. The policy will allow us to highlight where there are potential risks in the organisation.</p>
+<ul>
+  <li>AWS access keys should not be used where there is a valid alternative available using temporary access keys</li>
+  <li>AWS access keys must only be created where there is a clear requirement for programmatic access</li>
+  <li>AWS access keys must be rotated at least every <b>90 days, if not more often</b>, either through the AWS Console, Command Line Interface (CLI), or 
+    Application Programming Interface (API). <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey"> 
+    Instructions for rotating access keys</a></li>
+  <li>Individual AWS access keys must not be shared internally or externally with any other user or organisation, that is not the intended recipient 
+    of the access key</li>
+  <li>AWS access keys must be securely stored and approved as part of a service's security assurance</li>
+  <li>AWS access keys must not be embedded directly into code or repositories, tools provided by the AWS SDK and command line tools (e.g. AWS 
+    credentials file) should be used instead. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html">Further 
+    documentation for using temporary</a></li>
+  <li>In the event an AWS access key is published to the internet (e.g. GitHub), shared or lost you should follow the relevant incident management 
+    process and notify <a href="mailto:publiccloud@homeoffice.gov.uk">publiccloud@homeoffice.gov.uk</a> immediately. The access key should also be made inactive and deleted.</li>
+  <li>Permissions for individual users, services or applications using AWS access keys should be limited, based on least privilege and regularly 
+    reviewed (administrative permissions should be given as a last resort)</li>
+  <li>Multi Factor Authentication (MFA) must be enabled for any individual IAM user that has programmatic access and AWS access keys provided to them</li>
+</ul>
+
+<h3>Rotating your Access Keys</h3>
+<p>Access keys have a high level of permission, do not require re-authentication or use of MFA and can be easily committed as code. Therefore, it is much 
+  better practice to rotate any access keys that you use on a regular basis (AWS recommend a maximum of 90 days). It is noted that AWS recommend using 
+  temporary security credentials through the STS service over using access keys at all.</p>
+<p>In order to rotate your access keys, you need to have permission. All Home Office users with HOFullAdmin role should have the correct permissions. If 
+  you do not, you can raise a request with the Public Cloud Team to update your permissions. AWS have produced 
+  <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey">step by step guidance for rotate access 
+  keys</a> using the Console, the CLI and the API to rotate any user access keys.</p>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey">Amazon blog post for rotating access 
+  keys</a></p>
+
+<h3>Temporary Access Keys</h3>
+<p>At present the use of AWS access keys provide high levels of access with long lived credentials. However, in most cases long lived credentials are not 
+  required, and the access requirements can be fulfilled using short-lived temporary security credentials.</p>
+<p>Temporary security credentials are generated using the Security Token Service through the assumption of IAM roles. Along with an access key ID and 
+  secret access key, a security token is also created that indicates when the credentials expire. An example of the flow is provided below.</p>
+
+<img src="images/example_security_flow.png" alt="example of the security flow">
+
+<p>The primary benefit of temporary access keys provided by STS is that it limits the potential blast radius of any security incident, as the credentials 
+  provided are short lived. This means if they are accidently shared, published or stolen they will soon time out without user intervention. Where it is 
+  required though temporary security credentials can be revoked as detailed. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html">
+  How to revoke IAM role temporary security credentials</a></p>
+
+<h3>Amazon EC2</h3>
+<p>Where an application or AWS CLI script is running on an EC2 instance do not use access keys directly in the application. Instead define an IAM role 
+  that has the appropriate permissions for your application and attach it to the EC2 instance to be used. For applications using the AWS SDKs and CLI 
+  temporary credentials are retrieved from the role automatically. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html">
+  IAM roles for EC2</a>.</p>
+
+<h3>AWS Lambda</h3>
+<p>Each Lambda function has an execution role created in IAM that provides the function with the necessary permissions to run. When using the AWS SDKs, 
+  the temporary credentials are automatically retrieved from the execution role. Long lived AWS access keys should not be used at all when using Lambda 
+  including providing them via the environmental variables. <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html">AWS 
+  Lambda execution role</a>.</p>
+
+<h3>IAM USERS</h3>
+<p>The majority of IAM users do not require access keys that provide them with high levels of permissions, or multiple access keys to access multiple AWS 
+  accounts. Instead following best practice IAM users should be provided with a single AWS access key that provides a minimal level of access, this 
+  reduces the blast radius of long-lived access keys being published to the internet, shared or stolen as they will have restricted access. When users 
+  require privileged access, they should assume a role which will grant them temporary credentials as per figure 1. This can be used both within the same 
+  account that the IAM user exists in and to provide cross account access.</p>
+
+<h3>Future</h3>
+<p>The PCT are currently under educate, detect, guide model, where we are aiming to improve cloud practices across the Home Office by improving 
+  understanding of the cloud, being able to highlight when best practices are not being followed, and guiding our users.</p>
+
+<p>Back to start of <a href="#nav_tree">navigation tree</a></p>
+
+<a href="#page_title">Back to top</a>
+
+  </main>
+
+    <aside>
+        <ul class="contribution-banner">
+          <li><a href="https://github.com/alphagov/gds-way/blob/master/source/index.html.md.erb"><b>GDS</b> View source</a></li>
+          <li><a href="https://github.com/alphagov/gds-way/issues/new?labels=bug&amp;title=Re:%20'The%20GDS%20Way'&amp;body=Problem%20with%20'The%20GDS%20Way'%20(https://gds-way.cloudapps.digital/)"><b>GDS</b> Report problem</a></li>
+          <li><a href="https://github.com/alphagov/gds-way"><b>GDS</b> GitHub Repo</a></li>
+        </ul>
+    </aside>
+
+  <footer class="govuk-footer app-footer" role="contentinfo">
+  <div class="govuk-footer__meta">
+    <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+
+      <svg
+        role="presentation"
+        focusable="false"
+        class="govuk-footer__licence-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 483.2 195.7"
+        height="17"
+        width="41"
+      >
+        <path
+          fill="currentColor"
+          d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+        />
+      </svg>
+      <span class="govuk-footer__licence-description">
+        All content is available under the
+        <a
+          class="govuk-footer__link"
+          href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          rel="license"
+        >Open Government Licence v3.0</a>, except where otherwise stated
+      </span>
+      <p><a href="/accessibility.html">Accessibility Statement</a></p>
+      <p><a href="/there_was_a_problem.html">There was a problem</a></p>
+    </div>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="./javascripts/script.js"></script>
+  </body>
+</html>
