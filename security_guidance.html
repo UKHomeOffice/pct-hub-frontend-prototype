@@ -111,8 +111,8 @@
       <li><a href="cloud_guidance.html"><span>Reliability</span></a>
       <li><a href="cloud_guidance.html"><span>Performance Efficiency</span></a>
       <li><a href="cloud_guidance.html"><span>Reliability</span></a>
-        <ul>
-    </nav>
+  <ul>
+</nav>
 </div>
 </div>
 
@@ -134,8 +134,8 @@
 
 <h3>Further security resources</h3>
 <ul>
-<li><a href="https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf">AWS Security Whitepapers</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/security/overview">Microsoft Azure security pillar overview</a></li>
+<li><a href="https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf" target="_blank">AWS Security Whitepapers</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/security/overview" target="_blank">Microsoft Azure security pillar overview</a></li>
 </ul>
 
 <h3>Design principles</h3>
@@ -529,11 +529,11 @@
   provision of cloud services you use from a data protection and cyber security perspective your Senior Responsible Owner will be taking risks that are 
   mitigated by actions of other teams.</p>
 
-<p>The Public Cloud Team is available to help with any questions and queries email: <a href="mailto:publiccloud@homeoffice.gov.uk">publiccloud@homeoffice.gov.uk</a></p>
+<p>The Public Cloud Team is available to help with any questions and queries email: <a href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a></p>
 
 <h3>Further resources</h3>
 <ul>
-  <li><a href="https://cloudacademy.com/blog/aws-shared-responsibility-model-security/">Cloud academy shared responsibility model explanation</a></li>
+  <li><a href="https://cloudacademy.com/blog/aws-shared-responsibility-model-security/" target="_blank">Cloud academy shared responsibility model explanation</a></li>
 </ul>
 
 <h2 id="access_keys">Access Keys</h2>
@@ -551,8 +551,10 @@
   lost, stolen, cracked or published to a public repository. At present access keys are used by both users and applications / services.</p>
 
 <h3>Why is rotating access keys important?</h3>
-<p>The importance of AWS access keys and rotation of them can be seen through their inclusion in the <a href="https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/">AWS top 10 security items</a> to improve in your AWS 
-  account and <a href="https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf">CIS AWS Foundation Benchmark</a>.</p>
+<p>The importance of AWS access keys and rotation of them can be seen through their inclusion in the 
+  <a href="https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/" target="_blank">AWS top 10 security items</a> to 
+  improve in your AWS account and <a href="https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf" target="_blank">CIS AWS 
+  Foundation Benchmark</a>.</p>
 <p>The Public Cloud Team encourage the use of more secure and robust access key policy for the Home Office to educate users, application and platform 
   teams of best practice and to encourage good behaviours. In the future the PCT may if authorised by Home Office technical, data, governance and security 
   fora enforce the use of best practice, however, the current model is <b>educate</b>, <b>detect</b>, <b>guide</b>.</p>
@@ -564,16 +566,16 @@
   <li>AWS access keys should not be used where there is a valid alternative available using temporary access keys</li>
   <li>AWS access keys must only be created where there is a clear requirement for programmatic access</li>
   <li>AWS access keys must be rotated at least every <b>90 days, if not more often</b>, either through the AWS Console, Command Line Interface (CLI), or 
-    Application Programming Interface (API). <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey"> 
+    Application Programming Interface (API). <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey" target="_blank"> 
     Instructions for rotating access keys</a></li>
   <li>Individual AWS access keys must not be shared internally or externally with any other user or organisation, that is not the intended recipient 
     of the access key</li>
   <li>AWS access keys must be securely stored and approved as part of a service's security assurance</li>
   <li>AWS access keys must not be embedded directly into code or repositories, tools provided by the AWS SDK and command line tools (e.g. AWS 
-    credentials file) should be used instead. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html">Further 
-    documentation for using temporary</a></li>
+    credentials file) should be used instead. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html" target="_blank">
+    Further documentation for using temporary</a></li>
   <li>In the event an AWS access key is published to the internet (e.g. GitHub), shared or lost you should follow the relevant incident management 
-    process and notify <a href="mailto:publiccloud@homeoffice.gov.uk">publiccloud@homeoffice.gov.uk</a> immediately. The access key should also be made inactive and deleted.</li>
+    process and notify <a href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a> immediately. The access key should also be made inactive and deleted.</li>
   <li>Permissions for individual users, services or applications using AWS access keys should be limited, based on least privilege and regularly 
     reviewed (administrative permissions should be given as a last resort)</li>
   <li>Multi Factor Authentication (MFA) must be enabled for any individual IAM user that has programmatic access and AWS access keys provided to them</li>
@@ -585,10 +587,10 @@
   temporary security credentials through the STS service over using access keys at all.</p>
 <p>In order to rotate your access keys, you need to have permission. All Home Office users with HOFullAdmin role should have the correct permissions. If 
   you do not, you can raise a request with the Public Cloud Team to update your permissions. AWS have produced 
-  <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey">step by step guidance for rotate access 
-  keys</a> using the Console, the CLI and the API to rotate any user access keys.</p>
-<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey">Amazon blog post for rotating access 
-  keys</a></p>
+  <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey" target="_blank">step by step guidance 
+  for rotate access keys</a> using the Console, the CLI and the API to rotate any user access keys.</p>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey" target="_blank">Amazon blog post for 
+  rotating access keys</a></p>
 
 <h3>Temporary Access Keys</h3>
 <p>At present the use of AWS access keys provide high levels of access with long lived credentials. However, in most cases long lived credentials are not 
@@ -600,19 +602,19 @@
 
 <p>The primary benefit of temporary access keys provided by STS is that it limits the potential blast radius of any security incident, as the credentials 
   provided are short lived. This means if they are accidently shared, published or stolen they will soon time out without user intervention. Where it is 
-  required though temporary security credentials can be revoked as detailed. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html">
+  required though temporary security credentials can be revoked as detailed. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html" target="_blank">
   How to revoke IAM role temporary security credentials</a></p>
 
 <h3>Amazon EC2</h3>
 <p>Where an application or AWS CLI script is running on an EC2 instance do not use access keys directly in the application. Instead define an IAM role 
   that has the appropriate permissions for your application and attach it to the EC2 instance to be used. For applications using the AWS SDKs and CLI 
-  temporary credentials are retrieved from the role automatically. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html">
+  temporary credentials are retrieved from the role automatically. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html" target="_blank">
   IAM roles for EC2</a>.</p>
 
 <h3>AWS Lambda</h3>
 <p>Each Lambda function has an execution role created in IAM that provides the function with the necessary permissions to run. When using the AWS SDKs, 
   the temporary credentials are automatically retrieved from the execution role. Long lived AWS access keys should not be used at all when using Lambda 
-  including providing them via the environmental variables. <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html">AWS 
+  including providing them via the environmental variables. <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html" target="_blank">AWS 
   Lambda execution role</a>.</p>
 
 <h3>IAM USERS</h3>
