@@ -555,6 +555,7 @@
   <a href="https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/" target="_blank">AWS top 10 security items</a> to 
   improve in your AWS account and <a href="https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf" target="_blank">CIS AWS 
   Foundation Benchmark</a>.</p>
+
 <p>The Public Cloud Team encourage the use of more secure and robust access key policy for the Home Office to educate users, application and platform 
   teams of best practice and to encourage good behaviours. In the future the PCT may if authorised by Home Office technical, data, governance and security 
   fora enforce the use of best practice, however, the current model is <b>educate</b>, <b>detect</b>, <b>guide</b>.</p>
@@ -614,8 +615,8 @@
 <h3>AWS Lambda</h3>
 <p>Each Lambda function has an execution role created in IAM that provides the function with the necessary permissions to run. When using the AWS SDKs, 
   the temporary credentials are automatically retrieved from the execution role. Long lived AWS access keys should not be used at all when using Lambda 
-  including providing them via the environmental variables. <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html" target="_blank">AWS 
-  Lambda execution role</a>.</p>
+  including providing them via the environmental variables. <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html" target="_blank">
+  AWS Lambda execution role</a>.</p>
 
 <h3>IAM USERS</h3>
 <p>The majority of IAM users do not require access keys that provide them with high levels of permissions, or multiple access keys to access multiple AWS 
