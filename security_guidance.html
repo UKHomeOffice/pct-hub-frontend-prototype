@@ -107,6 +107,7 @@
               <li><a href="cloud_guidance.html"><span></span>Operational Excellence</a>
               <li><a href="security_guidance.html"><span>Security</span></a>
                 <ul>
+                  <li><a href="#what_is_the_security_pillar"><span>What is the security pillar?</span></a></li>
                   <li><a href="#cloud_responsibility_model"><span>Cloud responsibility model</span></a></li>
                   <li><a href="#access_keys"><span>Access keys</span></a></li>
                 </ul>
@@ -129,7 +130,7 @@
 
             <h1 id="page_title">Security guidance</h1>
 
-            <h2>What is the security pillar?</h2>
+            <h2 id="what_is_the_security_pillar">What is the security pillar?</h2>
             <p>The security pillar describes how to take advantage of cloud technologies to protect data, systems, and
               assets in a way that can improve your security. To give you an oversight of the pillar, we have included
               the seven design principles for security in the cloud below. For more information on the Security Pillar
@@ -144,56 +145,61 @@
             </ul>
 
             <h3>Design principles</h3>
-            <table class="security_table">
-              <tr>
-                <th>Design Principle</th>
-                <th>Explanation</th>
-              </tr>
-              <tr>
-                <td>Implement a strong identity foundation</td>
-                <td>Identity, authentication and authorisation is highly important for access control and ensures that
-                  data remains protected.</td>
-              </tr>
-              <tr>
-                <td>Enable traceability</td>
-                <td>The ability to audit and attribute actions within the cloud ensures that service and data security
-                  can be monitored.</td>
-              </tr>
-              <tr>
-                <td>Apply security at all layers</td>
-                <td>Defence in depth approach increases difficulty of any attacks on the service.</td>
-              </tr>
-              <tr>
-                <td>Automate security best practices</td>
-                <td>Automation allows repeatability and builds confidence in deployment – assessment of security
-                  benchmarks under Governance as Code approach.</td>
-              </tr>
-              <tr>
-                <td>Protect data in transit and at rest</td>
-                <td>All data should be encrypted in transit across the cloud and all data should be encrypted at rest.
-                </td>
-              </tr>
-              <tr>
-                <td>Keep people away from data</td>
-                <td>Data should be protected from manual use and manipulation.</td>
-              </tr>
-              <tr>
-                <td>Prepare for security events</td>
-                <td>Security breaches and incidents happen and preparation for these events can ensure that when then do
-                  occur they can be dealt with quickly and effectively and minimise any potential data loss or
-                  compromise of assets.</td>
-              </tr>
+            <table class="govuk-table">
+              <caption class="govuk-table__caption">Design Principles and Explanations</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Design Principle</th>
+                  <th scope="col" class="govuk-table__header">Explanation</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Implement a strong identity foundation</th>
+                  <td class="govuk-table__cell">Identity, authentication and authorisation is highly important for
+                    access control and ensures that data remains protected</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Enable traceability</th>
+                  <td class="govuk-table__cell">The ability to audit and attribute actions within the cloud ensures that
+                    service and data security can be monitored</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Apply security at all layers</th>
+                  <td class="govuk-table__cell">Defence in depth approach increases difficulty of any attacks on the
+                    service</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Automate security best practices</th>
+                  <td class="govuk-table__cell">Automation allows repeatability and builds confidence in deployment –
+                    assessment of security benchmarks under Governance as Code approach</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Protect data in transit and at rest</th>
+                  <td class="govuk-table__cell">All data should be encrypted in transit across the cloud and all data
+                    should be encrypted at rest</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Keep people away from data</th>
+                  <td class="govuk-table__cell">Data should be protected from manual use and manipulation</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Prepare for security events</th>
+                  <td class="govuk-table__cell">Security breaches and incidents happen and preparation for these events
+                    can ensure that when then do occur they can be dealt with quickly and effectively and minimise any
+                    potential data loss or compromise of assets</td>
+                </tr>
+              </tbody>
             </table>
 
             <p>Considering the guidance from the security pillar of the Well Architected Framework, we have different
-              sections that that relate to security in the Home Office:</p>
+              sections that relate to security in the Home Office:</p>
             <ul>
               <li>Cloud responsibility model</li>
               <li>Long lived access keys</li>
               <li>How IAM works in the HO</li>
               <li>National Cyber Security Centre (NCSC) Cloud Security Principles</li>
             </ul>
-
 
             <h2 id="cloud_responsibility_model">Cloud responsibility model</h2>
             <h3>What is the cloud responsibility model?</h3>
@@ -226,190 +232,201 @@
             </ul>
 
             <p>The functions within the model can be broken down to the following:</p>
-            <table class="security_table">
-              <tr>
-                <th>Area of Responsibility</th>
-                <th>SaaS/AS</th>
-                <th>PaaS/CS</th>
-                <th>IaaS</th>
-                <th>Definition</th>
-              </tr>
-              <tr>
-                <td>Customer Data</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>This is any data that the Home Office stores within AWS, i.e. an Immigration application, advanced
-                  passenger information. Under the Model this always remains the responsibility of the Home Office. The
-                  security of this data in the cloud is the responsibility of the portfolio using the cloud, however,
-                  other teams such as CSOC, platforms, public cloud, networks & infrastructure can assist by supporting
-                  security controls that allow more effective discharge of these responsibilities to mitigate the risks.
-                </td>
-              </tr>
-              <tr>
-                <td>End-points & Devices</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>These are equipment that the Home Office uses or are used by our customers to connect to Home Office
-                  services in the cloud. The security of these remain the responsibility of the Device Owner (i.e. EUC&C
-                  within DDAT ES, Supplier when using Supplier BYOCD or an individual in the case of our customers). It
-                  is the responsibility of the portfolio to ensure that their risk owners are content with any risks
-                  related to end points and devices.</td>
-              </tr>
-              <tr>
-                <td>Account Identities</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>This is the identity used by HO users to access the public cloud. This is the responsibility of the
-                  public cloud team to manage on behalf of the Home Office.</td>
-              </tr>
-              <tr>
-                <td>Access Controls</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>These include policies, roles and permissions. The HO organisational wide Access Controls are the
-                  responsibility of the public cloud team to implement, managing risk on behalf of the risk owners (and
-                  will be set with conversations with portfolios and OCISO). Portfolios (account owners) retain
-                  responsibility of access controls for any specific roles they create within their accounts.</td>
-              </tr>
-              <tr>
-                <td>Monitoring Usage and User Audit</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>This includes system and protective monitoring of what services HO uses and an audit of which users
-                  have access to services. The responsibilities here sit across portfolios, CSOC and the public cloud
-                  team who can enable policies within the organisation to make this more straightforward. The business
-                  owner within the portfolio is responsible for how services are used.</td>
-              </tr>
-              <tr>
-                <td>Web Application Security</td>
-                <td>HO/CP</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>A broad term for the security posture of any web application deployed onto the public cloud.
-                  Responsibilities for web application security lie with the Home Office, with the exception of
-                  container services.</td>
-              </tr>
-              <tr>
-                <td>Deployment</td>
-                <td>HO/CP</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>The deployment of services used by HO in the cloud is generally the responsibility of individuals
-                  platforms and portfolios as this relates to their deployment of cloud services, and there are a range
-                  of deployment methodologies and tools in place within HO. The Public Cloud Team are responsible for
-                  the deployment of new accounts and new users. The Cloud provider is responsible for the deployment of
-                  most functionality in SaaS and particularly serverless use case.</td>
-              </tr>
-              <tr>
-                <td>Operations</td>
-                <td>CP</td>
-                <td>HO</td>
-                <td>HO</td>
-                <td>The operations of services used by the Home Office in the cloud, this is generally the
-                  responsibility of the platforms that use these services.</td>
-              </tr>
-              <tr>
-                <td>Access and Authentication into the Cloud</td>
-                <td>HO/CP</td>
-                <td>HO/CP</td>
-                <td>HO/CP</td>
-                <td>The identity service provided by the Cloud Provider, which is used to gain access and authenticate
-                  into the cloud and the cloud provider retains control over this identity service. The HO is
-                  responsible for use of this, through Account Identities and Access Controls above.</td>
-              </tr>
-              <tr>
-                <td>Network Controls</td>
-                <td>CP</td>
-                <td>HO/CP</td>
-                <td>HO</td>
-                <td>Network controls such as firewalls, load balancers, DMZ, segregation securing access, monitoring
-                  etc. are the responsibility of the Home Office when running IaaS (e.g. EC2) and are the responsibility
-                  of platforms, networks & infrastructure and portfolios to undertake (the split in responsibility
-                  depends on the model within the accounts). The PCT can assist by implementing technically enforced
-                  policies and guidelines that prevent the network controls being too open, these will be defined in
-                  conversation with portfolios, OCISO and CSOC. Within the SaaS model the cloud provider retains
-                  responsibility of these controls - however, from an assurance perspective the Home Office should be
-                  appraised of what these controls are.</td>
-              </tr>
-              <tr>
-                <td>Operating System</td>
-                <td>CP</td>
-                <td>HO/CP</td>
-                <td>HO</td>
-                <td>Within SaaS tools this remains the responsibility of the cloud provider, who will patch and keep
-                  these up to date. Within most PaaS this is also true, however, within IaaS it is the responsibility of
-                  the Home Office to manage the OS and keep these up-to-date. This is the responsibility of the
-                  portfolio/platform to undertake this. On AWS this can be done using AMIs and the public cloud team can
-                  support this with technically enforced policies, monitoring and guidelines that can alert or prevent
-                  deployment of vulnerable OS.</td>
-              </tr>
-              <tr>
-                <td>Logging Provision</td>
-                <td>CP</td>
-                <td>HO/CP</td>
-                <td>HO</td>
-                <td>Cloud providers have several tools in place to assist with logging and the provision of logs for
-                  SaaS and PaaS is primarily the responsibility of the cloud provider, with the Home Office taking
-                  responsibility to ensure that these have been turned on and configured. The PCT may provide guidance
-                  and technical enforcement of logging across the estate through policies, but these will be agreed
-                  between portfolios, platforms, OCISO and CSOC. Note even in IaaS the Home Office can hook AWS logs
-                  generated on the infrastructure, i.e. VPC flow logs, API calls into CloudTrail, but other logs remain
-                  the responsibility of the portfolio or platform running the IaaS to provision and ensure these are
-                  protected.</td>
-              </tr>
-              <tr>
-                <td>Storage & Encryption</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>HO</td>
-                <td>The physical data storage always remains the responsibility of the cloud provider. The encryption
-                  and configuration of databases on top is the responsibility of the Home Office portfolios and
-                  platforms that are using the cloud services. They can specify what encryption is in place and policies
-                  around data storage. There is an exception when using a SaaS service where the cloud provider manages
-                  the encryption and configuration of database also.</td>
-              </tr>
-              <tr>
-                <td>Networking</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>The physical networking within and out of a data centre is the responsibility of the cloud provider.
-                </td>
-              </tr>
-              <tr>
-                <td>Kernel Hardening</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>HO</td>
-                <td>Kernel hardening is a kernel configuration that mitigates any vulnerabilities or bugs within the
-                  kernel to prevent cyber security attacks. Where the Home Office deploys its own OS and devices it is
-                  the responsibility of HO to manage this and this would set with Portfolios and Platforms to do.
-                  Otherwise, this remains the responsibility of the cloud provider.</td>
-              </tr>
-              <tr>
-                <td>Boot</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>This is part of the physical infrastructure of the data centre and is always the responsibility of
-                  the cloud provider.</td>
-              </tr>
-              <tr>
-                <td>Hardware</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>CP</td>
-                <td>The physical infrastructure within the data centre is always the responsibility of the cloud
-                  provider. The Home Office must ensure in line with the SPF that they are content with the physical
-                  security of any supplier they use, which can be demonstrated through physical security reviews/audits
-                  often conducted by third party consultancies under the SOC 2 reports. The provider is also responsible
-                  for the virtualisation.</td>
-              </tr>
+            <table class="govuk-table">
+              <caption class="govuk-table__caption">Areas of responsibilities, type of cloud services and definitions
+              </caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Area of Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS/AS</th>
+                  <th scope="col" class="govuk-table__header">PaaS/CS</th>
+                  <th scope="col" class="govuk-table__header">IaaS</th>
+                  <th scope="col" class="govuk-table__header">Definition</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Customer Data</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">This is any data that the Home Office stores within AWS, i.e. an
+                    Immigration application, advanced passenger information. Under the Model this always remains the
+                    responsibility of the Home Office. The security of this data in the cloud is the responsibility of
+                    the portfolio using the cloud, however, other teams such as CSOC, platforms, public cloud, networks
+                    & infrastructure can assist by supporting security controls that allow more effective discharge of
+                    these responsibilities to mitigate the risks.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">End-points & Devices</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">These are equipment that the Home Office uses or are used by our
+                    customers to connect to Home Office services in the cloud. The security of these remain the
+                    responsibility of the Device Owner (i.e. EUC&C within DDAT ES, Supplier when using Supplier BYOCD or
+                    an individual in the case of our customers). It is the responsibility of the portfolio to ensure
+                    that their risk owners are content with any risks related to end points and devices.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Account Identities</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">This is the identity used by HO users to access the public cloud. This
+                    is the responsibility of the public cloud team to manage on behalf of the Home Office.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access Controls</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">These include policies, roles and permissions. The HO organisational
+                    wide Access Controls are the responsibility of the public cloud team to implement, managing risk on
+                    behalf of the risk owners (and will be set with conversations with portfolios and OCISO). Portfolios
+                    (account owners) retain responsibility of access controls for any specific roles they create within
+                    their accounts.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Monitoring Usage and User Audit</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">This includes system and protective monitoring of what services HO uses
+                    and an audit of which users have access to services. The responsibilities here sit across
+                    portfolios, CSOC and the public cloud team who can enable policies within the organisation to make
+                    this more straightforward. The business owner within the portfolio is responsible for how services
+                    are used.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Web Application Security</th>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">A broad term for the security posture of any web application deployed
+                    onto the public cloud. Responsibilities for web application security lie with the Home Office, with
+                    the exception of container services.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Deployment</th>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">The deployment of services used by HO in the cloud is generally the
+                    responsibility of individuals platforms and portfolios as this relates to their deployment of cloud
+                    services, and there are a range of deployment methodologies and tools in place within HO. The Public
+                    Cloud Team are responsible for the deployment of new accounts and new users. The Cloud provider is
+                    responsible for the deployment of most functionality in SaaS and particularly serverless use case.
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operations</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">The operations of services used by the Home Office in the cloud, this is
+                    generally the responsibility of the platforms that use these services.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access and Authentication into the Cloud</th>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">The identity service provided by the Cloud Provider, which is used to
+                    gain access and authenticate into the cloud and the cloud provider retains control over this
+                    identity service. The HO is responsible for use of this, through Account Identities and Access
+                    Controls above.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Network Controls</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Network controls such as firewalls, load balancers, DMZ, segregation
+                    securing access, monitoring etc. are the responsibility of the Home Office when running IaaS (e.g.
+                    EC2) and are the responsibility of platforms, networks & infrastructure and portfolios to undertake
+                    (the split in responsibility depends on the model within the accounts). The PCT can assist by
+                    implementing technically enforced policies and guidelines that prevent the network controls being
+                    too open, these will be defined in conversation with portfolios, OCISO and CSOC. Within the SaaS
+                    model the cloud provider retains responsibility of these controls - however, from an assurance
+                    perspective the Home Office should be appraised of what these controls are.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operating System</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Within SaaS tools this remains the responsibility of the cloud provider,
+                    who will patch and keep these up to date. Within most PaaS this is also true, however, within IaaS
+                    it is the responsibility of the Home Office to manage the OS and keep these up-to-date. This is the
+                    responsibility of the portfolio/platform to undertake this. On AWS this can be done using AMIs and
+                    the public cloud team can support this with technically enforced policies, monitoring and guidelines
+                    that can alert or prevent deployment of vulnerable OS.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Logging Provision</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO/CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Cloud providers have several tools in place to assist with logging and
+                    the provision of logs for SaaS and PaaS is primarily the responsibility of the cloud provider, with
+                    the Home Office taking responsibility to ensure that these have been turned on and configured. The
+                    PCT may provide guidance and technical enforcement of logging across the estate through policies,
+                    but these will be agreed between portfolios, platforms, OCISO and CSOC. Note even in IaaS the Home
+                    Office can hook AWS logs generated on the infrastructure, i.e. VPC flow logs, API calls into
+                    CloudTrail, but other logs remain the responsibility of the portfolio or platform running the IaaS
+                    to provision and ensure these are protected.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Storage & Encryption</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">The physical data storage always remains the responsibility of the cloud
+                    provider. The encryption and configuration of databases on top is the responsibility of the Home
+                    Office portfolios and platforms that are using the cloud services. They can specify what encryption
+                    is in place and policies around data storage. There is an exception when using a SaaS service where
+                    the cloud provider manages the encryption and configuration of database also.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Networking</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">The physical networking within and out of a data centre is the
+                    responsibility of the cloud provider.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Kernel Hardening</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Kernel hardening is a kernel configuration that mitigates any
+                    vulnerabilities or bugs within the kernel to prevent cyber security attacks. Where the Home Office
+                    deploys its own OS and devices it is the responsibility of HO to manage this and this would set with
+                    Portfolios and Platforms to do. Otherwise, this remains the responsibility of the cloud provider.
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Boot</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">This is part of the physical infrastructure of the data centre and is
+                    always the responsibility of the cloud provider.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Hardware</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">The physical infrastructure within the data centre is always the
+                    responsibility of the cloud provider. The Home Office must ensure in line with the SPF that they are
+                    content with the physical security of any supplier they use, which can be demonstrated through
+                    physical security reviews/audits often conducted by third party consultancies under the SOC 2
+                    reports. The provider is also responsible for the virtualisation.</td>
+                </tr>
+              </tbody>
             </table>
 
             <h3>Cloud Providers and Home Office Responsibility Model</h3>
@@ -430,135 +447,140 @@
 
             <h3>Home Office Responsibility Matrix</h3>
             <!-- Can we get a sorting filter? -->
-            <table class="security_table">
-              <tr>
-                <th>Area of Responsibility</th>
-                <th>ACP</th>
-                <th>EBSA</th>
-                <th>Policing</th>
-                <th>HMPO</th>
-                <th>Wider HO</th>
-              </tr>
-              <tr>
-                <td>Customer Data</td>
-                <td>Portfolio</td>
-                <td>Portfolio</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Portfolio</td>
-              </tr>
-              <tr>
-                <td>Billing</td>
-                <td>PCT</td>
-                <td>PCT</td>
-                <td>Policing</td>
-                <td></td>
-                <td>PCT</td>
-              </tr>
-              <tr>
-                <td>End-points & Devices</td>
-                <td>EUC&C + Suppliers</td>
-                <td>EUC&C + Suppliers</td>
-                <td>Policing</td>
-                <td></td>
-                <td>EUC&C + Suppliers</td>
-              </tr>
-              <tr>
-                <td>Account Identities</td>
-                <td>PCT</td>
-                <td>EBSA + PCT</td>
-                <td>Policing</td>
-                <td></td>
-                <td>PCT</td>
-              </tr>
-              <tr>
-                <td>Access Controls</td>
-                <td>ACP + PCT</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Portfolio + PCT</td>
-              </tr>
-              <tr>
-                <td>Monitoring Usage and User Audit</td>
-                <td>ACP + Portfolio</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Portfolio + PCT</td>
-              </tr>
-              <tr>
-                <td>Web Application Security</td>
-                <td>ACP + Portfolio</td>
-                <td>EBSA + Portfolio</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Portfolio + Platform</td>
-              </tr>
-              <tr>
-                <td>Deployment</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Portfolio + Platform</td>
-              </tr>
-              <tr>
-                <td>Operations</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Portfolio + Platform</td>
-              </tr>
-              <tr>
-                <td>Access and Authentication into the Cloud</td>
-                <td>PCT</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>PCT</td>
-              </tr>
-              <tr>
-                <td>Network Controls</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Platform</td>
-              </tr>
-              <tr>
-                <td>Operating System</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Platform</td>
-              </tr>
-              <tr>
-                <td>Logging Provision</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Platform</td>
-              </tr>
-              <tr>
-                <td>Storage & Encryption</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Platform</td>
-              </tr>
-              <tr>
-                <td>Kernel Hardening</td>
-                <td>ACP</td>
-                <td>EBSA</td>
-                <td>Policing</td>
-                <td></td>
-                <td>Variable</td>
-              </tr>
+            <table class="govuk-table">
+              <caption class="govuk-table__caption">Areas of responsibilities and business areas</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Area of Responsibility</th>
+                  <th scope="col" class="govuk-table__header">ACP</th>
+                  <th scope="col" class="govuk-table__header">EBSA</th>
+                  <th scope="col" class="govuk-table__header">Policing</th>
+                  <th scope="col" class="govuk-table__header">HMPO</th>
+                  <th scope="col" class="govuk-table__header">Wider HO</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Customer Data</th>
+                  <td class="govuk-table__cell">Portfolio</td>
+                  <td class="govuk-table__cell">Portfolio</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Portfolio</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Billing</th>
+                  <td class="govuk-table__cell">PCT</td>
+                  <td class="govuk-table__cell">PCT</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">PCT</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">End-points & Devices</th>
+                  <td class="govuk-table__cell">EUC&C + Suppliers</td>
+                  <td class="govuk-table__cell">EUC&C + Suppliers</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">EUC&C + Suppliers</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Account Identities</th>
+                  <td class="govuk-table__cell">PCT</td>
+                  <td class="govuk-table__cell">EBSA + PCT</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">PCT</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access Controls</th>
+                  <td class="govuk-table__cell">ACP + PCT</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Portfolio + PCT</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Monitoring Usage and User Audit</th>
+                  <td class="govuk-table__cell">ACP + Portfolio</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Portfolio + PCT</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Web Application Security</th>
+                  <td class="govuk-table__cell">ACP + Portfolio</td>
+                  <td class="govuk-table__cell">EBSA + Portfolio</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Portfolio + Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Deployment</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Portfolio + Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operations</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Portfolio + Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access and Authentication into the Cloud</th>
+                  <td class="govuk-table__cell">PCT</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">PCT</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Network Controls</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operating System</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Logging Provision</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Storage & Encryption</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Platform</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Kernel Hardening</th>
+                  <td class="govuk-table__cell">ACP</td>
+                  <td class="govuk-table__cell">EBSA</td>
+                  <td class="govuk-table__cell">Policing</td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">Variable</td>
+                </tr>
+              </tbody>
             </table>
 
             <p>The responsibility matrix can also be expanded to other areas of processes and standards across the HO
